@@ -6,6 +6,19 @@
         </Console>
     </Appenders>
     <Loggers>
+        <logger name="com.springframework" level="info" additivity="false">
+         <AppenderRef ref="Console"/>
+        </logger>
+
+
+        <logger name="com.green" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </logger>
+
+        <logger name="com.green.springex.mapper" level="TRACE" additivity="false">
+            <AppenderRef ref="Console"/>
+        </logger>
+
         <Root level="info">
             <AppenderRef ref="Console"/>
         </Root>
